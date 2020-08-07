@@ -1,0 +1,4 @@
+include ':co2Chart'
+include ':core'
+include ':app'
+rootProject.name = "Co2 client"

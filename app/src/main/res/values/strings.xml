@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Co2 client</string>
+    <string name="title_co2chart">Co2 chart</string>
+    <string name="title_activity_co2_main">Co2 client</string>
+</resources>

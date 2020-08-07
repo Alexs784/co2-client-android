@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="co2_fragment_bg">@android:color/white</color>
+    <color name="co2_chart_line_color">#006EF4</color>
+    <color name="co2_chart_circle_color_co2_low">#52C808</color>
+    <color name="co2_chart_circle_color_co2_medium">#FF9800</color>
+    <color name="co2_chart_circle_color_co2_high">#F60000</color>
+    <color name="co2_chart_marker_view_bg">#006EF4</color>
+    <color name="co2_chart_legend_text_color">@android:color/black</color>
+    <color name="co2_chart_axis_text_color">@android:color/black</color>
+    <color name="co2_chart_axis_line_color">@android:color/black</color>
+</resources>
