@@ -55,13 +55,25 @@ class Co2ChartFragment : Fragment() {
     override fun onPrepareOptionsMenu(menu: Menu) {
         super.onPrepareOptionsMenu(menu)
         menu.findItem(R.id.darkModeMenuItem).setOnMenuItemClickListener {
-            if (isDarkModeEnabled()) {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            } else {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            }
+            toggleDarkMode()
             true
         }
+        menu.findItem(R.id.settingsMenuItem).setOnMenuItemClickListener {
+            openSettings()
+            true
+        }
+    }
+
+    private fun toggleDarkMode() {
+        if (isDarkModeEnabled()) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        }
+    }
+
+    private fun openSettings() {
+
     }
 
     private fun toggleLoading(show: Boolean) {
