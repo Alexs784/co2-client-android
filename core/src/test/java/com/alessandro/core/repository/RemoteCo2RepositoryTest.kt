@@ -25,7 +25,7 @@ class RemoteCo2RepositoryTest() {
     }
 
     @Test
-    fun shouldReturnLatestCo2Data() = runBlocking {
+    fun shouldReturnLatestCo2DataOrdered() = runBlocking {
         val latestCo2Data = listOf(
             Co2Entity(0, 100, ""),
             Co2Entity(1, 200, "")
@@ -34,6 +34,6 @@ class RemoteCo2RepositoryTest() {
 
         val result = remoteCo2Repository.getLatestCo2Data()
 
-        assertEquals(latestCo2Data, result)
+        assertEquals(latestCo2Data.reversed(), result)
     }
 }

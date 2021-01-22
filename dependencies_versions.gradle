@@ -17,4 +17,5 @@ ext {
     mpChartAndroid = "v3.1.0"
     swipeToRefreshVersion = "1.1.0"
     lifecycleViewModelKtxVersion = "2.3.0-alpha07"
+    datastorePreferencesVersion = "1.0.0-alpha01"
 }

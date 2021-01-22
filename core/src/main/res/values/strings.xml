@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">core</string>
+    <string name="data_store_default">preferences</string>
 </resources>
